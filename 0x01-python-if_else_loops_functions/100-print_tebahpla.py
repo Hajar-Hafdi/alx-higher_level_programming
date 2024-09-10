@@ -4,4 +4,4 @@ for bt in range(ord('z'), ord('a') - 1, -1):
         diff = 0
     else:
         diff = 32
-    print('{}'.format(chr(bt - diff)), end=")
+    print('{}'.format(chr(bt - diff)), end="")
