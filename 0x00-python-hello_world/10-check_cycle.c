@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * check_cycle - verifies if a linked list has a cyrcle
