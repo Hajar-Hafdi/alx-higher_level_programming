@@ -7,7 +7,7 @@ if __name__ == "__main__":
         exit(1)
     a = int(sys.argv[1])
     b = int(sys.argv[3])
-    op = sys.argv[2]
+    opr = sys.argv[2]
     if opr == "+":
         print("{} + {} = {}".format(a, b, add(a, b)))
     elif opr == "-":
