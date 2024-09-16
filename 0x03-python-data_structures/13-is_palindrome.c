@@ -19,13 +19,13 @@ int is_palindrome(listint_t **head)
  * @hed: hd lst
  * @ennd: end lst
  */
-int x_pal(listint_t **hed, listint_t *ennd)
+int x_pal(listint_t **head, listint_t *ennd)
 {
 	if (end == NULL)
 		return (1);
-	if (x_pal(hed, ennd->next) && (*hed)->n == ennd->n)
+	if (x_pal(head, ennd->next) && (*head)->n == ennd->n)
 	{
-		*hed = (*hed)->next;
+		*head = (*head)->next;
 		return (1);
 	}
 	return (0);
