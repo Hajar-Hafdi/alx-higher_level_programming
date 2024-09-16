@@ -2,6 +2,6 @@
 def no_c(my_string):
     t = ""
     for u in range(len(my_string)):
-        if (my_string[u] != 'c' and my_string[u] != 'c'):
+        if (my_string[u] != 'c' and my_string[u] != 'C'):
             t += my_string[u]
-            return t
+    return t
