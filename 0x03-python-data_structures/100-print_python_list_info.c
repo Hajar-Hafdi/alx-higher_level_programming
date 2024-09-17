@@ -10,10 +10,15 @@ void print_python_list_info(PyObject *p)
 	int sz, allocate, u;
 	PyObject *jct;
 
+	if (!PyList_Check(p)) {
+		fprintf(stderr, "Warning: Object not a Python list\n");
+		return;
+	}
+
 	sz = Py_SIZE(p);
 	allocate = ((PyListObject *)p)->allocated;
 
-	printf("[*] Size of the Python List = %d\n", size);
+	printf("[*] Size of the Python List = %d\n", sz);
 	printf("[*] Allocated = %d\n", allocate);
 
 	for (u = 0; u < sz; u++)
