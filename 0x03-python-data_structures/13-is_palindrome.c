@@ -11,19 +11,19 @@ int is_palindrome(listint_t **head)
 {
 	if (head == NULL || *head == NULL)
 		return (1);
-	return (x_pal(head, *head));
+	return (check_palindrome(head, *head));
 }
 /**
- * x_pal - function to verify if is pal
+ * check_palindrome - function to verify if is pal
  *
  * @hed: hd lst
  * @ennd: end lst
  */
-int x_pal(listint_t **head, listint_t *ennd)
+int check_palindrome(listint_t **head, listint_t *end)
 {
-	if (ennd == NULL)
+	if (end == NULL)
 		return (1);
-	if (x_pal(head, ennd->next) && (*head)->n == ennd->n)
+	if (check_palindrome(head, end->next) && (*head)->n == end->n)
 	{
 		*head = (*head)->next;
 		return (1);
