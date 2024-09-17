@@ -1,7 +1,8 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
- * is_palindrom - parses rec pal 
+ * is_palindrome - parses rec pal 
  *
  * @head: head list
  *
@@ -16,8 +17,8 @@ int is_palindrome(listint_t **head)
 /**
  * check_palindrome - function to verify if is pal
  *
- * @hed: hd lst
- * @ennd: end lst
+ * @head: hd lst
+ * @end: end lst
  */
 int check_palindrome(listint_t **head, listint_t *end)
 {
