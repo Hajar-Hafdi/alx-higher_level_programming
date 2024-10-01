@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-def safe_print_integer(value):
+def safe_print_list(my_list=[], x=0):
+    u = 0
     try:
-        if isinstance(value, int):
-            print(f"{value}")
-            return (True)
-        return (False)
-    except Exception:
-        return (False)
+        while u is not x:
+            print(my_list[u], end='')
+            u += 1
+    except IndexError:
+        None
+    print()
+    return u
